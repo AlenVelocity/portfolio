@@ -1,0 +1,62 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "homepage": "https://alenyohannan.xyz",
+  "description": "Portfolio site for Alen Yohannan",
+  "repository": "https://github.com/Alensaito1/portfolio.git",
+  "author": "Alen Yohannan",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@hamishmw/react-scripts-postcss": "4.0.0-mod1",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.5.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "mdx-loader": "^3.0.2",
+    "prettier": "^2.2.1",
+    "react-snap": "1.23.0",
+    "source-map-explorer": "^2.5.1",
+    "stylelint": "^13.8.0",
+    "stylelint-config-recommended": "^3.0.0"
+  },
+  "dependencies": {
+    "@mdx-js/react": "^1.6.22",
+    "classnames": "^2.2.6",
+    "popmotion": "^8.7.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "5.2.0",
+    "react-scripts-postcss": "^4.0.0-mod1",
+    "react-transition-group": "^4.4.1",
+    "three": "^0.126.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "postbuild": "react-snap",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "prettier-format": "prettier --config .prettierrc \"src/**/*.js\" --write"
+  },
+  "reactSnap": {
+    "skipThirdPartyRequests": true,
+    "headless": true,
+    "crawl": true
+  },
+  "browserslist": {
+    "production": [
+      ">10%",
+      "not dead",
+      "not ie 11",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

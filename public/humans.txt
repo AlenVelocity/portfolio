@@ -1,0 +1,31 @@
+The humans.txt file explains the team, technology,
+and graphic assets behind this site 
+
+Learn More at humanstxt.org.
+
+_______________________________________________________________________________
+
+DESIGNER
+
+Alen Yohannan
+Hand crafted design & web development
+
+Design tools:
+Figma
+Inkscape
+
+github.com/alensaito1
+_______________________________________________________________________________
+
+TECHNOLOGY 
+
+React
+Three js
+Popmotion
+
+_______________________________________________________________________________
+
+FONTS
+
+Gotham
+Hiragino Kaku Gothic

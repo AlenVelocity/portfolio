@@ -7,7 +7,7 @@
 Make sure you have nodejs and npm installed. Install dependencies with:
 
 ```bash
-npm
+npm i 
 ```
 
 Once it's done start up a local server with:

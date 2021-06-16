@@ -6,16 +6,16 @@ import Profile from 'pages/Home/Profile'
 import Footer from 'components/Footer'
 import { usePrefersReducedMotion, useRouteTransition } from 'hooks'
 import { useLocation } from 'react-router-dom'
-import spotifyB from 'assets/spotify_blurred.jpg'
-import WSFB from 'assets/WSF_blurred.jpg'
-import helpB from 'assets/botto-help_blurred.jpg'
-import bottoProfileB from 'assets/botto-profile_blurred.jpg'
 import iphone11 from 'assets/iphone-11.glb'
 import macbookPro from 'assets/macbook-pro.glb'
-import spotify from 'assets/spotify.jpg'
-import help from 'assets/botto-help.jpg'
-import bottoProfile from 'assets/botto-profile.jpg'
+import spotify_player from 'assets/spotify-player.jpg'
+import spotify_player_placeholder from 'assets/spotify-player-blurred.jpg'
+import player from 'assets/player.jpg'
+import player_placeholder from 'assets/player-blurred.jpg'
+import botto_void from 'assets/whatsapp-botto-void.jpg'
+import botto_void_placeholder from 'assets/whatsapp-botto-void-blurred.jpg'
 import WSF from 'assets/WSF.jpg'
+import WSF_Placeholder from 'assets/WSF-blurred.jpg'
 
 import './index.css'
 
@@ -155,54 +155,6 @@ const Home = () => {
                 sectionRef={projectOne}
                 visible={visibleSections.includes(projectOne.current)}
                 index={1}
-                title="SpotifyDl-Core"
-                description="A Spotify Downloader for NodeJS"
-                buttonText="View Project"
-                buttonLink="https://github.com/AlenSaito1/spotifydl-core"
-                model={{
-                    type: 'laptop',
-                    alt: 'SpotifyDl-Core',
-                    textures: [
-                        {
-                            src: spotify,
-                            srcSet: `${spotify} 800w, ${spotify} 1440w`,
-                            placeholder: spotifyB,
-                        },
-                    ],
-                }}
-            />
-            <ProjectSummary
-                id="project-2"
-                alternate
-                sectionRef={projectTwo}
-                visible={visibleSections.includes(projectTwo.current)}
-                index={2}
-                title="Emilia"
-                description="A WhatsApp Utility Bot made for automation purposes"
-                buttonText="View Project"
-                buttonLink="https://github.com/Synthesized-Infinity/Whatsapp-Botto-Xre"
-                model={{
-                    type: 'phone',
-                    alt: 'WhatsApp-Bot',
-                    textures: [
-                        {
-                            src: help,
-                            srcSet: `${help} 254w, ${help} 508w`,
-                            placeholder: helpB,
-                        },
-                        {
-                            src: bottoProfile,
-                            srcSet: `${bottoProfile} 254w, ${bottoProfile} 508w`,
-                            placeholder: bottoProfileB,
-                        },
-                    ],
-                }}
-            />
-            <ProjectSummary
-                id="project-3"
-                sectionRef={projectThree}
-                visible={visibleSections.includes(projectThree.current)}
-                index={3}
                 title="Wa-Sticker-Formatter"
                 description="WhatsApp Sticker Creator and Formatter"
                 buttonText="View Project"
@@ -214,7 +166,55 @@ const Home = () => {
                         {
                             src: WSF,
                             srcSet: `${WSF} 980w, ${WSF} 1376w`,
-                            placeholder: WSFB,
+                            placeholder: WSF_Placeholder,
+                        },
+                    ],
+                }}
+            />
+            <ProjectSummary
+                id="project-2"
+                alternate
+                sectionRef={projectTwo}
+                visible={visibleSections.includes(projectTwo.current)}
+                index={2}
+                title="Spotifydl-Core"
+                description="Spotify Downloader for NodeJS"
+                buttonText="View Project"
+                buttonLink="https://github.com/AlenSaito1/Spotifydl-Core"
+                model={{
+                    type: 'phone',
+                    alt: 'Spotifydl-Core',
+                    textures: [
+                        {
+                            src: player,
+                            srcSet: `${player} 254w, ${player} 508w`,
+                            placeholder: player_placeholder,
+                        },
+                        {
+                            src: spotify_player,
+                            srcSet: `${spotify_player} 254w, ${spotify_player} 508w`,
+                            placeholder: spotify_player_placeholder,
+                        }
+                    ],
+                }}
+            />
+            <ProjectSummary
+                id="project-3"
+                sectionRef={projectThree}
+                visible={visibleSections.includes(projectThree.current)}
+                index={3}
+                title="Whatsapp-Botto-Void"
+                description="A Multipurpose WhatsApp Bot"
+                buttonText="View Project"
+                buttonLink="https://github.com/Synthesized-infinity/spotifydl-core"
+                model={{
+                    type: 'laptop',
+                    alt: 'Whatsapp-Botto-Void',
+                    textures: [
+                        {
+                            src: botto_void,
+                            srcSet: `${botto_void} 800w, ${botto_void} 1440w`,
+                            placeholder: botto_void_placeholder,
                         },
                     ],
                 }}

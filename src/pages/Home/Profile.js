@@ -32,11 +32,11 @@ const ProfileText = ({ status, titleId }) => (
             )}
             size="l"
         >
-            I’m Alen, I'm 17 years old and I live in Kerala, India. My projects
-            include mostly of Backend apps. I'm a huge fan of automation. I try to write
-            more code everytime, beacuse I want to make sure everything is stable and
-            working If you're interested in the software I create, check out my Github
-            Profile use check out my <Link href="/uses">uses page</Link>.
+            I’m Alen, I'm 17 years old and I live in Kerala, India. My projects include
+            mostly of Backend apps. I'm a huge fan of automation. I try to write more code
+            everytime, beacuse I want to make sure everything is stable and working If
+            you're interested in the software I create, check out my Github Profile use
+            check out my <Link href="/uses">uses page</Link>.
         </Text>
         <Text
             className={classNames(

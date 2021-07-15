@@ -16,6 +16,14 @@ import botto_void from 'assets/whatsapp-botto-void.jpg'
 import botto_void_placeholder from 'assets/whatsapp-botto-void-blurred.jpg'
 import WSF from 'assets/WSF.jpg'
 import WSF_Placeholder from 'assets/WSF-blurred.jpg'
+import chess from 'assets/chess-1.jpg'
+import chess2 from 'assets/chess-2.jpg'
+import chess_ph from 'assets/chess-1_blurred.jpg'
+import chess2_ph from 'assets/chess-2_blurred.jpg'
+import fubuki from 'assets/fubuki-npm-light.png'
+import fubuki_ph from 'assets/fubuki-ph.jpg'
+import contrib from 'assets/gh-contrib-terminal.png'
+import contrib_ph from 'assets/gh-contrib_blurred.jpg'
 
 import './index.css'
 
@@ -31,11 +39,21 @@ const Home = () => {
     const projectOne = useRef()
     const projectTwo = useRef()
     const projectThree = useRef()
+    const projectFour = useRef()
+    const projectFive = useRef()
     const details = useRef()
     const prefersReducedMotion = usePrefersReducedMotion()
 
     useEffect(() => {
-        const revealSections = [intro, projectOne, projectTwo, projectThree, details]
+        const revealSections = [
+            intro,
+            projectOne,
+            projectTwo,
+            projectThree,
+            projectFour,
+            projectFive,
+            details,
+        ]
 
         const sectionObserver = new IntersectionObserver(
             (entries, observer) => {
@@ -177,6 +195,54 @@ const Home = () => {
                 sectionRef={projectTwo}
                 visible={visibleSections.includes(projectTwo.current)}
                 index={2}
+                title="Void"
+                description="A WhatsApp bot which can be used to play chess & more!"
+                buttonText="View Project"
+                buttonLink="https://github.com/Synthesized-infinity/whatsapp-botto-void"
+                model={{
+                    type: 'phone',
+                    alt: 'Spotifydl-Core',
+                    textures: [
+                        {
+                            src: chess,
+                            srcSet: `${chess} 254w, ${chess} 508w`,
+                            placeholder: chess_ph,
+                        },
+                        {
+                            src: chess2,
+                            srcSet: `${chess2} 254w, ${chess2} 508w`,
+                            placeholder: chess2_ph,
+                        },
+                    ],
+                }}
+            />
+            <ProjectSummary
+                id="project-3"
+                sectionRef={projectThree}
+                visible={visibleSections.includes(projectThree.current)}
+                index={3}
+                title="Fubuki"
+                description="Github GraphQL API Wraper"
+                buttonText="View Project"
+                buttonLink="https://github.com/alensaito1/fubuki"
+                model={{
+                    type: 'laptop',
+                    alt: 'Fubuki',
+                    textures: [
+                        {
+                            src: fubuki,
+                            srcSet: `${fubuki} 800w, ${fubuki} 1440w`,
+                            placeholder: fubuki_ph,
+                        },
+                    ],
+                }}
+            />
+            <ProjectSummary
+                id="project-4"
+                alternate
+                sectionRef={projectFour}
+                visible={visibleSections.includes(projectFour.current)}
+                index={4}
                 title="Spotifydl-Core"
                 description="Spotify Downloader for NodeJS"
                 buttonText="View Project"
@@ -194,27 +260,27 @@ const Home = () => {
                             src: spotify_player,
                             srcSet: `${spotify_player} 254w, ${spotify_player} 508w`,
                             placeholder: spotify_player_placeholder,
-                        }
+                        },
                     ],
                 }}
             />
             <ProjectSummary
-                id="project-3"
-                sectionRef={projectThree}
-                visible={visibleSections.includes(projectThree.current)}
-                index={3}
-                title="Whatsapp-Botto-Void"
-                description="A Multipurpose WhatsApp Bot"
+                id="project-5"
+                sectionRef={projectFive}
+                visible={visibleSections.includes(projectFive.current)}
+                index={5}
+                title="Next-Github"
+                description="Github Dynamic Stats Generator & Contribution Visualizer"
                 buttonText="View Project"
-                buttonLink="https://github.com/Synthesized-infinity/spotifydl-core"
+                buttonLink="https://github.com/alensaito1/next-github"
                 model={{
                     type: 'laptop',
-                    alt: 'Whatsapp-Botto-Void',
+                    alt: 'Next-Github',
                     textures: [
                         {
-                            src: botto_void,
-                            srcSet: `${botto_void} 800w, ${botto_void} 1440w`,
-                            placeholder: botto_void_placeholder,
+                            src: contrib,
+                            srcSet: `${contrib} 800w, ${contrib} 1440w`,
+                            placeholder: contrib_ph,
                         },
                     ],
                 }}

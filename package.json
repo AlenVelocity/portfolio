@@ -23,6 +23,9 @@
   "dependencies": {
     "@mdx-js/react": "^1.6.22",
     "classnames": "^2.2.6",
+    "dompurify": "^2.3.0",
+    "jsdom": "^16.6.0",
+    "nodemailer": "^6.6.3",
     "popmotion": "^8.7.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

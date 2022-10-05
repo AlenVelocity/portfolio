@@ -32,11 +32,10 @@ const ProfileText = ({ status, titleId }) => (
             )}
             size="l"
         >
-            I’m Alen, I'm 17 years old and I live in Kerala, India. My projects include
-            mostly of Backend apps. I'm a huge fan of automation. I try to write more code
-            everytime, beacuse I want to make sure everything is stable and working If
-            you're interested in the software I create, check out my Github Profile use
-            check out my <Link href="/uses">uses page</Link>.
+            I'm Alen, currently pursuing a degree in BCA.
+            Backend software, application rumtimes, and flutter apps are some of my work.
+            Because I'm at ease with programming, I can quickly validate experiences.
+            Visit my <Link href="/uses">uses page</Link> if you're curious about the tools and software I employ. 
         </Text>
         <Text
             className={classNames(
@@ -45,7 +44,7 @@ const ProfileText = ({ status, titleId }) => (
             )}
             size="l"
         >
-            In my spare time I like to play video games, watch anime. I’m always down for
+            In my spare time I like to play video games. I’m always down for
             hearing about new projects, so feel free to drop me a line.
         </Text>
     </Fragment>

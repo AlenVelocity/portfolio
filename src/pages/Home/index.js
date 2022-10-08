@@ -8,24 +8,22 @@ import { usePrefersReducedMotion, useRouteTransition } from 'hooks'
 import { useLocation } from 'react-router-dom'
 import iphone11 from 'assets/iphone-11.glb'
 import macbookPro from 'assets/macbook-pro.glb'
-import spotify_player from 'assets/spotify-player.jpg'
-import spotify_player_placeholder from 'assets/spotify-player-blurred.jpg'
-import player from 'assets/player.jpg'
-import player_placeholder from 'assets/player-blurred.jpg'
 import WSF from 'assets/WSF.jpg'
 import WSF_Placeholder from 'assets/WSF-blurred.jpg'
 import chess from 'assets/chess-1.jpg'
-import chess2 from 'assets/chess-2.jpg'
+import pf from 'assets/botto-profile.jpg'
 import chess_ph from 'assets/chess-1_blurred.jpg'
-import chess2_ph from 'assets/chess-2_blurred.jpg'
-import fubuki from 'assets/fubuki-npm-light.png'
-import fubuki_ph from 'assets/fubuki-ph.jpg'
-import contrib from 'assets/gh-contrib-terminal.png'
-import contrib_ph from 'assets/gh-contrib_blurred.jpg'
+import pfph from 'assets/botto-profile_blurred.jpg'
+import etrl from 'assets/Etrl.jpg'
+import etrlph from 'assets/Etrlph.jpg'
+import wfy1 from 'assets/WFY1.jpg'
+import wfy1ph from 'assets/WFY1ph.jpg'
+import wfy2 from 'assets/WFY2.jpg'
+import wfy2ph from 'assets/WFY2ph.jpg'
 
 import './index.css'
 
-const disciplines = ['Prototyper', 'Trailblazer']
+const disciplines = ['Gamer', 'Trailblazer']
 
 const Home = () => {
     const { status } = useRouteTransition()
@@ -38,7 +36,6 @@ const Home = () => {
     const projectTwo = useRef()
     const projectThree = useRef()
     const projectFour = useRef()
-    const projectFive = useRef()
     const details = useRef()
     const prefersReducedMotion = usePrefersReducedMotion()
 
@@ -49,7 +46,6 @@ const Home = () => {
             projectTwo,
             projectThree,
             projectFour,
-            projectFive,
             details,
         ]
 
@@ -171,6 +167,54 @@ const Home = () => {
                 sectionRef={projectOne}
                 visible={visibleSections.includes(projectOne.current)}
                 index={1}
+                title="Ethereal"
+                description="Simple yet fast general-purpose programming language."
+                buttonText="View Project"
+                buttonLink="https://ethereal-docs.vercel.app/"
+                model={{
+                    type: 'laptop',
+                    alt: 'Ethereal',
+                    textures: [
+                        {
+                            src: etrl,
+                            srcSet: `${etrl} 980w, ${etrl} 1376w`,
+                            placeholder: etrlph,
+                        },
+                    ],
+                }}
+            />
+            <ProjectSummary
+                id="project-2"
+                alternate
+                sectionRef={projectTwo}
+                visible={visibleSections.includes(projectTwo.current)}
+                index={2}
+                title="Weebify"
+                description="Flutter App to fetch Anime and Manga Details"
+                buttonText="View Project"
+                buttonLink="https://github.com/AlenVelocity/Weebify"
+                model={{
+                    type: 'phone',
+                    alt: 'Weebify',
+                    textures: [
+                        {
+                            src: wfy2,
+                            srcSet: `${wfy2} 254w, ${wfy2} 508w`,
+                            placeholder: wfy2ph,
+                        },
+                        {
+                            src: wfy1,
+                            srcSet: `${wfy1} 254w, ${wfy1} 508w`,
+                            placeholder: wfy1ph,
+                        },
+                    ],
+                }}
+            />
+            <ProjectSummary
+                id="project-3"
+                sectionRef={projectThree}
+                visible={visibleSections.includes(projectThree.current)}
+                index={3}
                 title="Wa-Sticker-Formatter"
                 description="WhatsApp Sticker Creator and Formatter"
                 buttonText="View Project"
@@ -188,18 +232,18 @@ const Home = () => {
                 }}
             />
             <ProjectSummary
-                id="project-2"
+                id="project-4"
                 alternate
-                sectionRef={projectTwo}
-                visible={visibleSections.includes(projectTwo.current)}
-                index={2}
+                sectionRef={projectFour}
+                visible={visibleSections.includes(projectFour.current)}
+                index={4}
                 title="Void"
-                description="A WhatsApp bot which can be used to play chess & more!"
+                description="Uility bot for Whatsapp Group chats"
                 buttonText="View Project"
                 buttonLink="https://github.com/Synthesized-infinity/whatsapp-botto-void"
                 model={{
                     type: 'phone',
-                    alt: 'Spotifydl-Core',
+                    alt: 'Void',
                     textures: [
                         {
                             src: chess,
@@ -207,82 +251,14 @@ const Home = () => {
                             placeholder: chess_ph,
                         },
                         {
-                            src: chess2,
-                            srcSet: `${chess2} 254w, ${chess2} 508w`,
-                            placeholder: chess2_ph,
+                            src: pf,
+                            srcSet: `${pf} 254w, ${pf} 508w`,
+                            placeholder: pfph,
                         },
                     ],
                 }}
             />
-            <ProjectSummary
-                id="project-3"
-                sectionRef={projectThree}
-                visible={visibleSections.includes(projectThree.current)}
-                index={3}
-                title="Fubuki"
-                description="Github GraphQL API Wraper"
-                buttonText="View Project"
-                buttonLink="https://github.com/alensaito1/fubuki"
-                model={{
-                    type: 'laptop',
-                    alt: 'Fubuki',
-                    textures: [
-                        {
-                            src: fubuki,
-                            srcSet: `${fubuki} 800w, ${fubuki} 1440w`,
-                            placeholder: fubuki_ph,
-                        },
-                    ],
-                }}
-            />
-            <ProjectSummary
-                id="project-4"
-                alternate
-                sectionRef={projectFour}
-                visible={visibleSections.includes(projectFour.current)}
-                index={4}
-                title="Spotifydl-Core"
-                description="Spotify Downloader for NodeJS"
-                buttonText="View Project"
-                buttonLink="https://github.com/AlenSaito1/Spotifydl-Core"
-                model={{
-                    type: 'phone',
-                    alt: 'Spotifydl-Core',
-                    textures: [
-                        {
-                            src: player,
-                            srcSet: `${player} 254w, ${player} 508w`,
-                            placeholder: player_placeholder,
-                        },
-                        {
-                            src: spotify_player,
-                            srcSet: `${spotify_player} 254w, ${spotify_player} 508w`,
-                            placeholder: spotify_player_placeholder,
-                        },
-                    ],
-                }}
-            />
-            <ProjectSummary
-                id="project-5"
-                sectionRef={projectFive}
-                visible={visibleSections.includes(projectFive.current)}
-                index={5}
-                title="Next-Github"
-                description="Github Dynamic Stats Generator & Contribution Visualizer"
-                buttonText="View Project"
-                buttonLink="https://github.com/alensaito1/next-github"
-                model={{
-                    type: 'laptop',
-                    alt: 'Next-Github',
-                    textures: [
-                        {
-                            src: contrib,
-                            srcSet: `${contrib} 800w, ${contrib} 1440w`,
-                            placeholder: contrib_ph,
-                        },
-                    ],
-                }}
-            />
+
             <Profile
                 sectionRef={details}
                 visible={visibleSections.includes(details.current)}

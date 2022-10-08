@@ -7,7 +7,7 @@ import DecoderText from 'components/DecoderText'
 import Divider from 'components/Divider'
 import Image from 'components/Image'
 import Section from 'components/Section'
-import ProfileImg from 'assets/blush.jpg'
+import ProfileImg from 'assets/slient-boy.png'
 import ProfileImgPlaceholder from 'assets/profile-placeholder.jpg'
 import { reflow } from 'utils/transition'
 import { media } from 'utils/style'
@@ -32,8 +32,8 @@ const ProfileText = ({ status, titleId }) => (
             )}
             size="l"
         >
-            I'm Alen, currently pursuing a degree in BCA.
-            Backend software, application rumtimes, and flutter apps are some of my work.
+            I'm Alen, currently pursuing BCA.
+            Backend software, application rumtimes, and Mobile applocations are some of my work.
             Because I'm at ease with programming, I can quickly validate experiences.
             Visit my <Link href="/uses">uses page</Link> if you're curious about the tools and software I employ. 
         </Text>
@@ -45,7 +45,7 @@ const ProfileText = ({ status, titleId }) => (
             size="l"
         >
             In my spare time I like to play video games. I’m always down for
-            hearing about new projects, so feel free to drop me a line.
+            meeting new people, so feel free to drop me a line.
         </Text>
     </Fragment>
 )

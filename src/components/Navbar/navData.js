@@ -22,7 +22,7 @@ export const navLinks = [
 export const socialLinks = [
     {
         label: 'Twitter',
-        url: 'https://twitter.com/takahiroban',
+        url: 'https://twitter.com/alenvelocity',
         icon: 'twitter',
     },
     {

@@ -32,10 +32,11 @@ const ProfileText = ({ status, titleId }) => (
             )}
             size="l"
         >
-            I'm Alen, currently pursuing BCA.
-            Backend software, application rumtimes, and Mobile applocations are some of my work.
-            Because I'm at ease with programming, I can quickly validate experiences.
-            Visit my <Link href="/uses">uses page</Link> if you're curious about the tools and software I employ. 
+            I'm Alen, currently pursuing BCA. Backend software, application rumtimes, and
+            Mobile applocations are some of my work. Because I'm at ease with programming,
+            I can quickly validate experiences. Visit my{' '}
+            <Link href="/uses">uses page</Link> if you're curious about the tools and
+            software I employ.
         </Text>
         <Text
             className={classNames(
@@ -44,8 +45,8 @@ const ProfileText = ({ status, titleId }) => (
             )}
             size="l"
         >
-            In my spare time I like to play video games. I’m always down for
-            meeting new people, so feel free to drop me a line.
+            In my spare time I like to play video games. I’m always down for meeting new
+            people, so feel free to drop me a line.
         </Text>
     </Fragment>
 )

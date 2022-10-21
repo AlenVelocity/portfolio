@@ -23,7 +23,7 @@ import wfy2ph from 'assets/WFY2ph.jpg'
 
 import './index.css'
 
-const disciplines = ['Gamer', 'Trailblazer']
+const disciplines = ['Student', 'Trailblazer']
 
 const Home = () => {
     const { status } = useRouteTransition()

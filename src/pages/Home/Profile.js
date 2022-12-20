@@ -32,7 +32,7 @@ const ProfileText = ({ status, titleId }) => (
             )}
             size="l"
         >
-            I'm Alen, currently pursuing BCA. Backend software, application rumtimes, and
+            I'm Alen, Backend softwares, application rumtimes, and
             Mobile applocations are some of my work. Because I'm at ease with programming,
             I can quickly validate experiences. Visit my{' '}
             <Link href="/uses">uses page</Link> if you're curious about the tools and

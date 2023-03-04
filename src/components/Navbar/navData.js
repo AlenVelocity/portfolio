@@ -27,7 +27,7 @@ export const socialLinks = [
     },
     {
         label: 'Github',
-        url: 'https://github.com/alensaito1',
+        url: 'https://github.com/alenvelocity',
         icon: 'github',
     },
 ]

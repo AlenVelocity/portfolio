@@ -2,7 +2,7 @@
   --headerNavFontSize: calc((16 / 16) * 1rem);
 
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: flex-start;
   padding: 0;
@@ -12,6 +12,8 @@
   left: var(--spaceOuter);
   bottom: var(--spaceOuter);
   z-index: 1024;
+  transform-origin: 0 0;
+  transform: translate(0%, 0%) rotate(90deg) translate(0%, -100%);
 
   @media (--mediaMobile) {
     & {
@@ -29,8 +31,9 @@
 .navbar__logo {
   display: flex;
   position: relative;
-  padding: var(--spaceS) var(--spaceS) var(--spaceL);
+  padding: var(--spaceS) var(--spaceL);
   z-index: 16;
+  rotate: 270deg;
 
   &:focus {
     box-shadow: 0 0 0 4px rgb(var(--rgbBackground)), 0 0 0 8px rgb(var(--rgbText));
@@ -50,13 +53,13 @@
 
 .navbar__nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
   flex: 1 1 auto;
   max-width: var(--space2XL);
   position: relative;
-  top: calc(var(--spaceM) * -1);
+  bottom: 49em;
 
   @media (--mediaMobile), (max-height: 696px) {
     & {
@@ -66,7 +69,7 @@
 }
 
 .navbar__nav-list {
-  transform: rotate(-90deg) translate3d(-50%, 0, 0);
+  transform: rotate(-90deg) translate3d(100%, 0, 0);
   display: flex;
   flex-direction: row-reverse;
 }
@@ -126,11 +129,13 @@
 
 .navbar__nav-icons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   position: relative;
   z-index: 16;
+  top: 5em;
+  rotate: 270deg;
 
   @media (--mediaMobile), (max-height: 696px) {
     & {

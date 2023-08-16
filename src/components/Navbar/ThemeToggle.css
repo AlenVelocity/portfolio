@@ -5,10 +5,8 @@
   z-index: 2048;
   width: var(--buttonSize);
   height: var(--buttonSize);
-  top: var(--spaceOuter);
-  right: var(--spaceOuter);
+  bottom: 105em;
   margin-top: calc(var(--spaceS) * -1);
-  margin-right: calc(var(--spaceS) * -1);
   transform: translate3d(0, 0, 0);
 
   @media (--mediaMobile), (max-height: 696px) {
